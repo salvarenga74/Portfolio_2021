@@ -1,23 +1,85 @@
-nav {
-  margin: 20px auto 10px 20px;
+:root {
+  --mainBlue: #173f5f;
+  --regBlue: #20639b;
+  --regGreen: #3caea3;
+  --regYellow: #f6d55c;
+  --regRed: #ed553b;
 }
 
-.openingBanner {
-  padding: 20px 80px;
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-bottom: 40px;
+}
+
+h3 {
+  padding: 2%;
+  border-bottom: 3px solid var(--regBlue);
+}
+
+nav a {
+  color: whitesmoke;
+  font-size: 130%;
+}
+
+.openingBanner,
+.contactBackground,
+nav {
+  background-color: var(--mainBlue);
+  color: whitesmoke;
+  padding: 2%;
 }
 
 #headerImage {
-  width: 60%;
+  max-width: 60%;
   height: auto;
 }
 
+.aboutMePhoto {
+  float: left;
+  margin: 0 30px;
+  height: auto;
+  width: 20%;
+  padding-left: 40px;
+}
 .project-card {
   margin: auto 10px;
   min-height: 400px;
 }
 
+.contactBackground {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 100%;
+  padding: 5%;
+}
+
+.contactBackground a,
+.btn {
+  background-color: var(--regYellow);
+  color: var(--mainBlue);
+  border-color: var(--regYellow);
+}
+
+footer {
+  padding: 3%;
+  font-size: 110%;
+  background-color: var(--regBlue);
+  color: whitesmoke;
+}
+
 @media screen and (max-width: 480px) {
   .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
     flex-direction: column;
   }
 }

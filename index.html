@@ -13,67 +13,65 @@
 
 <body>
   <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <ul class="nav nav-pills ">
-      <a class="nav-link active" href="#">Sally Alvarenga</a>
-      <a class="nav-link" href="#">About Me</a>
-      <a class="nav-link" href="#">Contact Info</a>
+  <nav class="navbar navbar-expand-lg navbar-light salNavigationBar"  style="background-color: #173f5f ;">
+    <ul class="nav nav-pills" >
+      <a class="nav-item nav-link btn-seconday" href="#aboutMe" >About Me</a>
+      <a class="nav-item nav-link" href="#resume">Resume</a>
+      <a class="nav-item nav-link" href="#contactInfo">Contact</a>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">Projects</a>
+          aria-expanded="false">Portfolio</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">International Weather Dashboard</a>
-          <a class="dropdown-item" href="#">Online Quiz Game</a>
-          <a class="dropdown-item" href="#">Password Generator</a>
+          <a class="dropdown-item" href="#selfCreatedApplications">Self Created Applications</a>
+          <a class="dropdown-item" href="#refactoringAssignments">Refactoring Assignments</a>
+          <a class="dropdown-item" href="#collaborativeProjects">Collaborative Projects</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Github Repos</a>
+          <a class="dropdown-item" href="https://github.com/salvarenga74?tab=repositories" target="_blank">Github Repository</a>
         </div>
       </li>
     </ul>
   </nav>
 
-  <section class="jumbotron jumbotron-fluid openingBanner">
+  <section class="jumbotron jumbotron-fluid openingBanner" style="margin:0%;">
     <div class="row">
-      <article class="col offset-2 align-self-center">
-        <h1 class="display-3 mt-0 mb-1 text-right">Hey, I'm</h1>
+      <article class="col align-self-center">
+        <h2 class="display-3 mt-0 mb-1 text-right">Hey, I'm</h2>
         <h1 class="display-3 mt-0 mb-1 text text-right">Sally Alvarenga</h1>
         <p class="lead text-right">A young and ambitious engineer, certified in full stack web development, eager to improve my work and the work of any team I become a part of.
         </p>
       </article>
-      <article class="col d-flex justify-content-left">
+      <article class="col justify-content-left">
         <img class=" img-fluid" id="headerImage" src="./assets/images/IMG_0465.JPG"
           alt="Profile Photo of Sally Alvarenga from August 2020" />
       </article>
     </div>
   </section>
 
+  <div style="margin-top: -3px; width:101.5%">
+    <img class=" img-fluid" src="./assets/Images/topTransition.png" alt="transition image for background">
+  </div>
+  
   <section class="container" id="aboutMe">
     <h2>About Me</h2>
-    <section class="aboutMe" >
-        <div class="gradPhoto">
-            <img src="./assets/Images/IMG_0463.JPG" alt="Sally in her Graduation Outfit">
-         </div>
-        <section class="aboutMeContent">    
-             <p>I received my Bachelor's of Science degree in Biomedical Engineering from the University of Texas at Arlington in 2020. I then obtained my certification for Full Stack Web Development from the SMU Coding Boot Camp powered by Trilogy Education Services.</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>    
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-        </section>  
-    </section>
-</section>
-
-<section class="container contactBackground">
-  <section id="contactInfo">
-      <h3>Thank you for getting to know me.</h3>
-      <h4>I'd Love to Talk to You Too!</h1>
-      <a class="contactDetail" href="tel:+8177715620">(817) 771-5620</a>
-      <a class="contactDetail" href="mailto:sallyalvarenga35@gmail.com">sallyalvarenga35@gmail.com</a>
+      <article class="row aboutMe">
+          <div class=" col aboutMePhoto ">
+              <img class=" img-fluid" src="./assets/Images/IMG_0463.JPG" alt="Sally in her Graduation Outfit">
+          </div>
+          <section class=" col aboutMeContent">    
+               <p>I received my Bachelor's of Science degree in Biomedical Engineering from the University of Texas at Arlington in 2020. I then obtained my certification for Full Stack Web Development from the SMU Coding Boot Camp powered by Trilogy Education Services.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>    
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+          </section>  
+      </article>
   </section>
-</section>
 
   <section class=" container">
-    <div class="row justify-content-center">
-      <div class="card col-3 project-card">
-        <h3 class="card-header">Featured</h3>
+    <!-- Row 1 -->
+    <h3 id="selfCreatedApplications">Self Created Applications</h3>
+    <article class="row justify-content-center">
+
+      <div class="card col-4 project-card">
+        <h4 class="card-header">Featured</h4>
         <div class="card-body">
           <img src="#" alt="screenshot of repo">
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -81,28 +79,47 @@
           <a href="#!" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="card col-3 project-card">
-        <h3 class="card-header">Featured</h3>
+      <div class="card col-4 project-card">
+        <h4 class="card-header">Featured</h4>
         <div class="card-body">
           <img src="#" alt="screenshot of repo">
           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           <a href="#!" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="card col-3 project-card">
-        <h3 class="card-header">Featured</h3>
+      
+    </article>
+
+    <!-- Row 2 -->
+    <h3 id="refactoringAssignments">Refactoring Assignments</h3>
+    <div class="row justify-content-center">
+
+      <div class="card col-4 project-card">
+        <h4 class="card-header">Featured</h4>
         <div class="card-body">
           <img src="#" alt="screenshot of repo">
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This card has even longer content than the first to show that equal height action.</p>
+            content. This content is a little bit longer.</p>
           <a href="#!" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      <div class="card col-4 project-card">
+        <h4 class="card-header">Featured</h4>
+        <div class="card-body">
+          <img src="#" alt="screenshot of repo">
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <a href="#!" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      
     </div>
 
-    <div class="row">
-      <div class="card col-3 project-card">
-        <h3 class="card-header">Featured</h3>
+    <!-- Row 3 -->
+    <h3 id="collaborativeProjects">Collaborative Projects</h3>
+    <div class="row justify-content-center">
+    
+      <div class="card col-4 project-card">
+        <h4 class="card-header">Featured</h4>
         <div class="card-body">
           <img src="#" alt="screenshot of repo">
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -110,34 +127,42 @@
           <a href="#!" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="card col-3 project-card">
-        <h3 class="card-header">Featured</h3>
+      <div class="card col-4 project-card">
+        <h4 class="card-header">Featured</h4>
         <div class="card-body">
           <img src="#" alt="screenshot of repo">
           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           <a href="#!" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="card col-3 project-card">
-        <h3 class="card-header">Featured</h3>
-        <div class="card-body">
-          <img src="#" alt="screenshot of repo">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This card has even longer content than the first to show that equal height action.</p>
-          <a href="#!" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+    
     </div>
+    <article class ="justify-content-center">
+      <a href="https://github.com/salvarenga74?tab=repositories" class="btn btn-primary" target="_blank">All GitHub Repositories</a>
+    </article>
+  </section>
+  <div style="margin-bottom: -5px; width:102%">
+    <img class=" img-fluid" src="./assets/Images/bottomTransition.png" alt="transition image for background">
+  </div>
+  <section class="container contactBackground">
+    <section id="contactInfo">
+      <h4>Thank you for getting to know me.</h4>
+      <h1>I'd Love to Talk to You Too!</h1>
+        <a class="contactDetail btn btn-primary" href="tel:+8177715620">(817) 771-5620</a>
+        <a class="contactDetail btn btn-primary" href="mailto:sallyalvarenga35@gmail.com">sallyalvarenga35@gmail.com</a>
+    </section>
   </section>
 
-  <footer>
+  <footer class="row" style="margin-bottom: 0%;">
     <p> &copy2021 Sally Alvarenga. All Rights Reserved.</p>
+    <i class=" col fab fa-linkedin" ></i>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
   <script src="./assets/script.js"></script>
 </body>
 
