@@ -26,13 +26,13 @@
 
 h3 {
   padding: 2%;
-  border-bottom: 3px solid var(--regBlue);
+  border-bottom: 7px solid var(--regBlue);
   color: var(--mainBlue);
 }
 
 nav a {
   color: whitesmoke;
-  font-size: 130%;
+  font-size: 125%;
 }
 
 .openingBanner,
@@ -74,7 +74,7 @@ nav {
 }
 
 footer {
-  padding: 3%;
+  padding: 2%;
   font-size: 110%;
   background-color: var(--regBlue);
   color: whitesmoke;
